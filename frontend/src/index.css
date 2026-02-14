@@ -1,0 +1,79 @@
+/* Design system – aesthetic palette (teal + violet) */
+:root {
+  /* Primary – teal */
+  --color-primary: #0d9488;
+  --color-primary-hover: #0f766e;
+  --color-primary-light: #ccfbf1;
+  --color-primary-muted: rgba(13, 148, 136, 0.12);
+  --color-primary-border: rgba(13, 148, 136, 0.35);
+
+  /* Accent – violet (CTAs, links, emphasis) */
+  --color-accent: #7c3aed;
+  --color-accent-hover: #6d28d9;
+  --color-accent-light: #ede9fe;
+  --color-accent-muted: rgba(124, 58, 237, 0.15);
+
+  /* Surfaces */
+  --color-bg-page: #f0fdfa;
+  --color-bg-page-mid: #ecfeff;
+  --color-bg-page-end: #f5f3ff;
+  --color-bg-card: #ffffff;
+  --color-bg-muted: #f1f5f9;
+  --color-bg-input: #ffffff;
+
+  /* Text */
+  --color-text: #0f172a;
+  --color-text-secondary: #334155;
+  --color-text-muted: #64748b;
+  --color-text-subtle: #94a3b8;
+
+  /* Borders */
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+  --color-focus-ring: rgba(13, 148, 136, 0.35);
+
+  /* Semantic */
+  --color-success: #059669;
+  --color-success-bg: #ecfdf5;
+  --color-success-border: #a7f3d0;
+  --color-error: #dc2626;
+  --color-error-bg: #fef2f2;
+  --color-warn-bg: #fffbeb;
+  --color-warn-text: #92400e;
+  --color-info-bg: #eff6ff;
+  --color-info-border: #bfdbfe;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+  --shadow-card: 0 4px 16px rgba(15, 23, 42, 0.08);
+  --shadow-card-hover: 0 12px 32px rgba(13, 148, 136, 0.12);
+  --shadow-dropdown: 0 10px 40px rgba(15, 23, 42, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-text);
+  background: var(--color-bg-page);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+#root {
+  min-height: 100vh;
+}
