@@ -4,7 +4,7 @@
   "private": true,
   "description": "Single-port run: build frontend, then start backend to serve API + app.",
   "scripts": {
-    "build": "cd frontend && npm run build",
+    "build": "cd frontend && npm install && npm run build && cd ../backend && npm install",
     "start": "cd backend && node server.js",
     "single": "npm run build && npm run start",
     "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
